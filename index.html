@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        div{
+            /* height: 5rem;
+            width: 5rem; */
+            border: 2px solid red;
+            background-color: burlywood;
+        }
+
+        #time {
+            width: 10rem;
+            font-size: 2rem;
+            border: 2px solid black;
+            margin: 2rem;
+            text-align: center;
+        }
+
+        #setAlarm {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="alarmContainer">
+        <input type="text" id="time" placeholder="hh:mm">
+
+        <button id="setAlarm">Set Alarm!</button>
+        <audio src="https://kukuklok.com/audio/military.mp3" id="alarmAudio"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
